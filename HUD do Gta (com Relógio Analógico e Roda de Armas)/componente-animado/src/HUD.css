@@ -1,0 +1,43 @@
+.hud-arma-equipada {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .hud-arma-equipada.hidden {
+    opacity: 0;
+    pointer-events: none; 
+  }
+  
+  .hud-arma-imagem {
+    width: 80px; 
+    height: auto;
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.2)); 
+  }
+  
+  .hud-arma-info {
+    display: flex;
+    flex-direction: column;
+    color: #eee;
+    font-size: 1.1em;
+  }
+  
+  .hud-arma-nome {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .hud-arma-balas {
+    font-size: 0.9em;
+    color: #bbb;
+  }

@@ -1,0 +1,104 @@
+.relogio-hud-wrapper {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    padding: 10px 15px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .relogio-gta-container {
+    width: 80px;
+    height: 80px; 
+    flex-shrink: 0; 
+  }
+  
+  .relogio-gta-borda {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #4a4a4a 0%, #2a2a2a 100%);
+    border: 2px solid #5a5a5a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .relogio-gta-fundo {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    position: relative;
+  }
+  
+  .relogio-gta-marcador {
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background-color: #999;
+    transform-origin: bottom center;
+  }
+  
+  .relogio-gta-marcador.marcador-12 { top: 0; left: 50%; transform: translateX(-50%); }
+  .relogio-gta-marcador.marcador-3 { top: 50%; right: 0; transform: translateY(-50%) rotate(90deg); }
+  .relogio-gta-marcador.marcador-6 { bottom: 0; left: 50%; transform: translateX(-50%) rotate(180deg); }
+  .relogio-gta-marcador.marcador-9 { top: 50%; left: 0; transform: translateY(-50%) rotate(-90deg); }
+  
+  .relogio-gta-ponteiro {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: center bottom;
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    transition: transform 0.1s linear;
+  }
+  
+  .relogio-gta-ponteiro.relogio-gta-hora {
+    width: 4px;
+    height: 30%;
+    margin-left: -2px;
+  }
+  
+  .relogio-gta-ponteiro.relogio-gta-minuto {
+    width: 3px;
+    height: 40%;
+    margin-left: -1.5px;
+  }
+  
+  .relogio-gta-ponteiro.relogio-gta-segundo {
+    width: 2px;
+    height: 45%;
+    background-color: #0dbd4b;
+    margin-left: -1px;
+  }
+  
+  .relogio-gta-centro {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #0dbd4b;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 0 0 5px #0dbd4b;
+  }
+  
+  .relogio-digital-gta {
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 1.8em; 
+    color: #0dbd4b; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    white-space: nowrap; 
+  }
+  
